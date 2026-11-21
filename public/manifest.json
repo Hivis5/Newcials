@@ -1,0 +1,19 @@
+{
+  "name": "Newcials — Real News Reels",
+  "short_name": "Newcials",
+  "description": "Instagram Reels-style news aggregator tailored by age, country, and state. Zero cinema or celebrity noise.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080d",
+  "theme_color": "#07080d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/covers/economy.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

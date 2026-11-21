@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Newcials" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Newcials — Real-World News Reels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <div id="ambient-bg" class="ambient-bg" aria-hidden="true"></div>
+
+  <div class="studio-layout">
+    <!-- Desktop Left Context Rail (hidden on mobile screens) -->
+    <aside class="studio-rail studio-rail-left" id="desktop-left-rail">
+      <div class="studio-brand">
+        <div class="studio-logo-mark">N</div>
+        <div>
+          <div class="studio-brand-title">Newcials</div>
+          <div class="studio-brand-sub">Anti-Fluff News Reels</div>
+        </div>
+      </div>
+
+      <div class="studio-card" id="desktop-persona-card">
+        <div class="studio-card-label">ACTIVE FEED PERSONA</div>
+        <div class="studio-persona-name" id="desktop-persona-name">Welcome</div>
+        <div class="studio-persona-meta" id="desktop-persona-meta">Set your age, country &amp; state to personalize</div>
+      </div>
+
+      <div class="studio-card" id="desktop-filter-card">
+        <div class="studio-card-label">ATTENTION SHIELD</div>
+        <div class="studio-shield-stat" id="desktop-shield-stat">Cinema &amp; celeb gossip blocked</div>
+        <div class="studio-shield-sub" id="desktop-shield-sub">Only economy, jobs, food prices, weather &amp; global impact</div>
+      </div>
+    </aside>
+
+    <!-- Mobile Phone Viewport (Main Focus) -->
+    <main class="phone-shell" id="phone-shell" aria-label="Newcials mobile experience">
+      <div class="phone-notch" aria-hidden="true">
+        <span class="phone-speaker"></span>
+        <span class="phone-camera"></span>
+      </div>
+
+      <div class="phone-screen" id="phone-screen">
+        <!-- App Views Mount Here -->
+        <div id="app-root" class="app-root"></div>
+
+        <!-- In-phone Toast Notification -->
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+        <!-- In-phone Bottom Sheet Modal -->
+        <div id="sheet-backdrop" class="sheet-backdrop hidden" aria-hidden="true">
+          <div id="sheet-panel" class="sheet-panel" role="dialog" aria-modal="true"></div>
+        </div>
+      </div>
+
+      <div class="phone-home-indicator" aria-hidden="true"></div>
+    </main>
+
+    <!-- Desktop Right Ergonomic Controls (hidden on mobile screens) -->
+    <aside class="studio-rail studio-rail-right" id="desktop-right-rail">
+      <div class="studio-nav-controls" id="desktop-reel-controls">
+        <button type="button" class="studio-nav-btn" id="desktop-prev-btn" title="Previous Reel (Up Arrow)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+          <span>Prev</span>
+        </button>
+        <div class="studio-counter" id="desktop-reel-counter">—</div>
+        <button type="button" class="studio-nav-btn" id="desktop-next-btn" title="Next Reel (Down Arrow)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          <span>Next</span>
+        </button>
+      </div>
+
+      <div class="studio-shortcuts">
+        <div class="studio-card-label">SWIPE &amp; KEYS</div>
+        <div class="shortcut-row"><kbd>↑</kbd><kbd>↓</kbd><span>Swipe reels</span></div>
+        <div class="shortcut-row"><kbd>L</kbd><span>Like / Double-tap</span></div>
+        <div class="shortcut-row"><kbd>B</kbd><span>Save reel</span></div>
+        <div class="shortcut-row"><kbd>Enter</kbd><span>Open article</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+{
+  "name": "newcials",
+  "version": "1.0.0",
+  "description": "Mobile-first Instagram Reels style news aggregator tailored by age, country, and state — zero cinema or celeb fluff, only real-life economic, job, food, weather, and geopolitical impact.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "MIT"
+}
+
